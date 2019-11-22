@@ -161,7 +161,6 @@ class UI {
 				 * SAVE THE CART TO STORAGE
 				 * ADD TO CART :: "DOM"
 				 * SET CART VALUES (TOTAL PRICE AND TOTAL AMOUNT)
-				 * SHOW CART
 				 */
 				const product = products.find(product => product.id === id);
 				const modProduct = Object.assign({}, product, { amount: 1 });
@@ -169,7 +168,6 @@ class UI {
 				Storage.SetItem("cart", this.cart);
 				this.renderCartItem(modProduct);
 				this.setCartValues();
-				showCart();
 			});
 		});
 	}
@@ -215,6 +213,7 @@ class UI {
 			if (target.classList.contains("cart-remove-btn")) {
 				this.removeCartItem(dataset.id);
 				CART_CONTENT.removeChild(parentElement.parentElement);
+				if (!CART_CONTENT.children.length) hideCart();
 			}
 			if (target.classList.contains("cart-qty-amount-up-btn")) {
 				this.getCartItemQty(target, "up");
@@ -260,6 +259,8 @@ class UI {
 
 		while (CART_CONTENT.children.length > 0)
 			CART_CONTENT.removeChild(CART_CONTENT.children[0]);
+
+		hideCart();
 	}
 
 	// REMOVES EVERY CART ITEM BY IT'S ID

@@ -387,8 +387,8 @@ body {
   position: absolute;
   bottom: 20px;
   right: 0px;
-  -webkit-transform: translateX(90%);
-          transform: translateX(90%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .main-section .products .product:hover {
