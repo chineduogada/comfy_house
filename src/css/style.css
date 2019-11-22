@@ -167,15 +167,17 @@ body {
 }
 
 .header .nav .overlay {
-  visibility: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+  opacity: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
   background: rgba(244, 185, 129, 0.7);
   position: absolute;
-  height: calc(100vh - 52px);
+  height: calc(100vh - 60px);
   width: 100%;
   left: 0;
-  top: 100%;
+  top: 60px;
+  -webkit-clip-path: circle(0 at 120% -20%);
+          clip-path: circle(0 at 120% -20%);
 }
 
 .header .nav .overlay .cart {
@@ -190,10 +192,10 @@ body {
   max-width: 500px;
   -webkit-box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4);
           box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.4);
-  -webkit-transition: -webkit-clip-path 1s ease-in-out;
-  transition: -webkit-clip-path 1s ease-in-out;
-  transition: clip-path 1s ease-in-out;
-  transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  -webkit-transition: -webkit-clip-path 2.5s ease-in-out;
+  transition: -webkit-clip-path 2.5s ease-in-out;
+  transition: clip-path 2.5s ease-in-out;
+  transition: clip-path 2.5s ease-in-out, -webkit-clip-path 2.5s ease-in-out;
   -webkit-clip-path: circle(0 at 120% -20%);
           clip-path: circle(0 at 120% -20%);
 }
@@ -256,12 +258,22 @@ body {
 }
 
 .header .nav.show-cart .overlay {
-  visibility: visible;
+  opacity: 1;
+  -webkit-clip-path: circle(calc(100vh + 100%) at 105% -5%);
+          clip-path: circle(calc(100vh + 100%) at 105% -5%);
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
 .header .nav.show-cart .overlay .cart {
   -webkit-clip-path: circle(calc(100vh + 100%) at 105% -5%);
           clip-path: circle(calc(100vh + 100%) at 105% -5%);
+  -webkit-transition: -webkit-clip-path 1s ease-in-out;
+  transition: -webkit-clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out;
+  transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
 }
 
 @media (min-width: 500px) {
