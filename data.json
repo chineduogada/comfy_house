@@ -1,0 +1,102 @@
+{
+	"items": [
+		{
+			"sys": { "id": "1" },
+			"fields": {
+				"title": "queen panel bed",
+				"price": 10.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/1.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "2" },
+			"fields": {
+				"title": "king panel bed",
+				"price": 15.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/2.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "3" },
+			"fields": {
+				"title": "queen bed",
+				"price": 6.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/3.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "4" },
+			"fields": {
+				"title": "king bed",
+				"price": 6.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/4.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "5" },
+			"fields": {
+				"title": "cupboard",
+				"price": 30.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/5.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "6" },
+			"fields": {
+				"title": "Fridge",
+				"price": 60.99,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/6.jpg"
+						}
+					}
+				}
+			}
+		},
+		{
+			"sys": { "id": "7" },
+			"fields": {
+				"title": "Table",
+				"price": 20.9,
+				"image": {
+					"fields": {
+						"file": {
+							"url": "./src/img/7.jpg"
+						}
+					}
+				}
+			}
+		}
+	]
+}
